@@ -12,29 +12,8 @@ div.centered {
   transform: translate(-50%,-50%);
 }
 
+/* ---- USER TYPE ---- */
 
-
-/* ---- HOMEPAGE ---- */
-
-div.home { 
-  background: black; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-  margin-top: -20px;
-  height: 100vh;  
-
-  text-align: center;
-}
-
-div.home h1 {
-  margin: 10px;
-  padding: 0;
-
-  font-size: 65px;
-}
 
 button.game_join {
   margin-left: 80px;
@@ -60,6 +39,47 @@ button.players_join {
 }
 
 
+/* ---- HOMEPAGE ---- */
+
+div.home { 
+  background: black; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  margin-top: -20px;
+  height: 100vh;  
+
+  text-align: center;
+}
+
+div.home h1 {
+  margin: 10px;
+  padding: 0;
+  margin-bottom: 150px;
+  font-size: 85px;
+}
+
+button.login {
+  border: solid;
+  width: 250px;
+  height: 120px;
+  font-size: 40px;
+  border-radius: 20px;
+  background: none;
+  margin-right: 50px;
+}
+
+button.register {
+  border: solid;
+  width: 250px;
+  height: 120px;
+  font-size: 40px;
+  border-radius: 20px;
+  background: none;
+  margin-left: 50px;
+}
 
 
 /* ---- CREATE GAME ---- */
