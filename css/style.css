@@ -44,6 +44,12 @@ div.panel-body {
   padding: 40px;
 }
 
+div.gmap {
+  border: solid;
+  border-width: 2px;
+  border-radius: 5px;
+}
+
 
 
 /* ---- GAMES ---- */
