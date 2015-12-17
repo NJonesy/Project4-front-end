@@ -17,7 +17,7 @@ div.centered {
 /* ---- HOMEPAGE ---- */
 
 div.home { 
-  background: url('http://www.wired.com/wp-content/uploads/blogs/design/wp-content/uploads/2012/07/072612-BAY-BRIDGE-107edit.jpg') no-repeat center center; 
+  background: black; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -35,6 +35,30 @@ div.home h1 {
 
   font-size: 65px;
 }
+
+button.game_join {
+  margin-left: 80px;
+  width: 350px;
+  height: 180px;
+  font-size: 40px;
+  border: solid;
+  border-radius: 20px;
+  background: none;
+  margin-top: 100px;
+  margin-right: 490px;
+}
+
+button.players_join {
+  width: 350px;
+  height: 180px;
+  font-size: 40px;
+  border: solid;
+  border-radius: 20px;
+  background: none;
+  margin-top: 100px;
+  margin-right: 200px;
+}
+
 
 
 
