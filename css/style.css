@@ -52,6 +52,24 @@ div#current-games div.panel-body {
   padding: 10px;
 }
 
+tr.active {
+  border: solid;
+  border-width: 2px;
+}
+
+tr.table_header {
+  border: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  width: 100vh;
+}
+
+.search_map {
+  border: solid;
+  border-width: 2px;
+  border-radius: 5px;
+}
+
 
 /* ---- MAP ---- */
 
