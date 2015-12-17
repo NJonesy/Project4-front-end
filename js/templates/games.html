@@ -1,28 +1,63 @@
 <div id="current-games" ng-controller='GamesController as games'>
-  
-<h2>Find a game in your sport</h2>
+  <div class="container">
+    <div class="row">
 
-  <form class="form-horizontal">
-        <div class="form-group">
-            <div class="col-sm-5">
-                <p>Sport</p>
-                    <input class="form-control"  type="text" placeholder="sport" ng-model="games.sportSearch">
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-sm-5">
-                <p>How many players do you have?</p>
-                    <input class="form-control"  type="text" placeholder="number of players" ng-model="games.numberSearch">
-            </div>
-        </div>
-  </form>    
-  </br>
-      <div class="search_map" id="search_map" style="width:715px;height:600px;"></div>
-          <div id="class" ng-repeat="marker in games.markers"></div>
-              <p>Here is the list of our current games:</p>
+      <div class="panel panel-default">
+        <div class="panel-body">
 
-  <div ng-repeat="x in nas = (games.all | filter:{sport:games.sportSearch} | filter:{number_of_players:games.numberSearch})"><strong>{{ x.sport }}</strong> | <strong>{{ x.date }}</strong> | <strong>{{ x.placeName }}</strong> | <strong>{{ x.start_time }}</strong>  | <strong>{{ x.end_time }}</strong>  | <strong>{{ x.comment }}</strong> | <strong>{{ x.number_of_players }}</strong> 
+          <div class="col-sm-12 col-md-12">
+            <h2>Find a game in your sport</h2>
+
+            <div class="form-group">
+              <label>Sport</label>
+              <input class="form-control"  type="text" placeholder="sport" ng-model="games.sportSearch">
+            </div>
+
+            <div class="form-group">
+              <label>How many players?</label>
+              <input class="form-control"  type="text" placeholder="number of players" ng-model="games.numberSearch">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div clas="row">
+      <div class="col-sm-6 col-md-6">
+        <div class="search_map" id="search_map" style="width:100%;height:500px;"></div>
+        <div id="class" ng-repeat="marker in games.markers"></div>
+      </div>
+
+      <div class="col-sm-6 col-md-6">
+
+        <table class="table table-striped table-hover ">
+          <tr>
+            <th>Sport</th>
+            <th>Date</th>
+            <th>Start time</th>
+            <th>End time</th>
+            <th>Comment</th>
+            <th>Number of players wanted</th>
+          </tr>
+          <tr class="active" ng-repeat="x in nas = (games.all | filter:{sport:games.sportSearch} | filter:{number_of_players:games.numberSearch})"><td>{{ x.sport }}</td><td>{{ x.date }}</td><td>{{ x.placeName }}</td><td>{{ x.start_time }}</td><td>{{ x.end_time }}</td><td>{{ x.comment }}</td><td>{{ x.number_of_players }}</td>
+          </tr>
+        </table>
+    </div>
   </div>
-
+  </div>
 </div>
+
+<!-- <tr class="active">
+  <td>7</td>
+  <td>Column content</td>
+  <td>Column content</td>
+  <td>Column content</td>
+</tr> -->
+
+
+
+
+
+
+
 

@@ -1,3 +1,5 @@
+/* ---- UTILITY ---- */
+
 body {
   margin: 0 auto;
   font-family: 'Archivo Black', sans-serif;
@@ -9,6 +11,8 @@ div.centered {
   top: 50%;
   transform: translate(-50%,-50%);
 }
+
+
 
 /* ---- HOMEPAGE ---- */
 
@@ -40,6 +44,13 @@ div.panel-body {
   padding: 40px;
 }
 
+
+
+/* ---- GAMES ---- */
+
+div#current-games div.panel-body {
+  padding: 10px;
+}
 
 
 /* ---- MAP ---- */
