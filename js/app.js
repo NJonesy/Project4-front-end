@@ -1,6 +1,12 @@
 angular
   .module('GetAGame', ['angular-jwt', 'ngResource', 'ui.router', 'uiGmapgoogle-maps'])
-  .constant('API', 'http://players-app.herokuapp.com/api')
+  .constant('API', function(){
+    if(/localhost/.test(window.location.host)){
+      return "http://localhost:3000/api"
+    } else {
+      return "http://players-app.herokuapp.com/api"
+    }
+  }())
   .config(GoogleMaps) 
   .config(function($httpProvider) {
     $httpProvider.interceptors.push('AuthInterceptor');

@@ -2,9 +2,10 @@ angular
   .module('GetAGame')
   .controller('PlayersController', PlayersController)
 
-PlayersController.$inject = ['Player', 'TokenService']
-function PlayersController(Player, TokenService) {
+PlayersController.$inject = ['Player', 'TokenService', '$scope', '$location']
+function PlayersController(Player, TokenService, $scope, $location) {
   var self = this;
+  this.url;
 
   self.all = Player.query(function(data) {
     return data.players;
@@ -53,12 +54,7 @@ function PlayersController(Player, TokenService) {
     self.getPlayers();
     self.player = TokenService.getPlayer();
   }
+};
 
-  self.redirectRegister = function(){
-    self.location.url('/#register');
-  }  
 
-  self.redirectLogin = function(url){
-    self.location.url('/login');
-  }  
-}
+
