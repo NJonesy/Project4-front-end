@@ -1,0 +1,32 @@
+
+<div ng-controller="PlayersController as players">
+  
+  <h3>Login</h3>
+  
+  <form class="form-horizontal" id="login" ng-submit="players.login()">
+    <fieldset>
+
+        <div class="form-group">
+           <label for="email" class="col-lg-2 control-label">email</label>
+              <div class="col-sm-5">
+                  <input type="text" class="form-control"  name="email" placeholder="What is your email?" ng-model="players.player.email">
+              </div>
+        </div>
+        </br>
+        <div class="form-group">
+            <label for="password" class="col-lg-2 control-label">Password</label>
+                <div class="col-sm-5">
+                     <input type="password" class="form-control" name="password" placeholder="What is your password?" ng-model="players.player.password">
+                </div>
+        </div>
+        </br>
+        <div class="form-group">
+            <div class="col-lg-2 control-label">
+                <div class="col-sm-5">
+                      <input type="submit" value="Access" class="btn btn-primary">
+                </div>
+            </div>
+        </div>
+    </fieldset>
+  </form>
+</div>

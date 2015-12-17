@@ -1,0 +1,29 @@
+<div id="current-games" ng-controller='GamesController as games'>
+  <p>Here is the list of our current games:</p>
+
+  <h2>Find a game in your sport</h2>
+
+  <form class="form-horizontal">
+        <div class="form-group">
+            <div class="col-sm-5">
+                <p>Sport</p>
+                    <input class="form-control"  type="text" placeholder="sport" ng-model="games.sportSearch">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-5">
+                <p>How many players do you have?</p>
+                    <input class="form-control"  type="text" placeholder="number of players" ng-model="games.numberSearch">
+            </div>
+        </div>
+  </form>    
+  </br>
+      <div class="search_map" id="search_map" style="width:715px;height:600px;"></div>
+
+      <div id="class" ng-repeat="marker in games.markers"></div>
+
+  <div ng-repeat="x in nas = (games.all | filter:{sport:games.sportSearch} | filter:{number_of_players:games.numberSearch})"><strong>{{ x.sport }}</strong> | <strong>{{ x.date }}</strong> | <strong>{{ x.placeName }}</strong> | <strong>{{ x.start_time }}</strong>  | <strong>{{ x.end_time }}</strong>  | <strong>{{ x.comment }}</strong> | <strong>{{ x.number_of_players }}</strong> 
+  </div>
+
+</div>
+

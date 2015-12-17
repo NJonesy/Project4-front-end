@@ -1,0 +1,9 @@
+<div id="current-players" ng-controller="PlayersController as players">
+  <p>Here is the list of our current players:</p>
+  <ul>
+    <li ng-repeat="player in players.all">
+      {{player.players}}
+      <strong>{{ player.username }}</strong> - {{ player.fullname }} - <strong> - {{ player.description }}</strong><strong> - {{ player.image }}</strong>
+    </li>
+  </ul>
+</div>
