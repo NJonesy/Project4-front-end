@@ -1,73 +1,79 @@
 <div ng-controller='GamesController as games'>
-  <h3>Create A Game</h3>
   
-  <form class="form-horizontal" ng-submit='games.addGame()'>
-    <fieldset>
+    <div class="container">
+        <div class="col-sm-6 col-md-offset-3">
+            <div class="panel panel-default">  
+                <div class="panel-body">
+                    <h3>Create A Game</h3>
+                    </br>
+                    <form class="form-horizontal" ng-submit='games.addGame()'>
 
         <div class="form-group">
             <label for="sport" class="col-lg-2 control-label">Sport</label>
-                <div class="col-sm-5">
+                <div class="col-sm-9">
                     <input type="text" class="form-control" name="sport" placeholder= "Sport" ng-model='games.newGame.sport'>
                 </div>
         </div>
         </br>
         <div class="form-group">
             <label for="date" class="col-lg-2 control-label">Date</label>
-            <div class="col-sm-5">
-                <input type="date" class="form-control"  name="date" placeholder= "Date" ng-model='games.newGame.date'>
+                <div class="col-sm-9">
+                    <input type="date" class="form-control"  name="date" placeholder= "Date" ng-model='games.newGame.date'>
             </div>
         </div>  
         </br>
         <div class="form-group">
-
             <label for="start_time" class="col-lg-2 control-label">Start time</label>
-            <div class="col-sm-5">
-                <input type="text" class="form-control" name="start_time" placeholder="Start time" ng-model='games.newGame.start_time'>
+                <div class="col-sm-9">
+                     <input type="text" class="form-control" name="start_time" placeholder="Start time" ng-model='games.newGame.start_time'>
             </div>
         </div>
         </br>
         <div class="form-group">
             <label for="end_time" class="col-lg-2 control-label">End time</label>
-            <div class="col-sm-5">
-                <input type="text" class="form-control" name="end-time" placeholder= "End Time" ng-model='games.newGame.end_time'>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" name="end-time" placeholder= "End Time" ng-model='games.newGame.end_time'>
             </div>
         </div>
         </br>
         <div class="form-group">
-
             <label for="number_of_players" class="col-lg-2 control-label">Number of players</label>
-            <div class="col-sm-5">
-                <input type="text" class="form-control" name="number_of_players" placeholder="Number of players" ng-model='games.newGame.number_of_players'>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" name="number_of_players" placeholder="Number of players" ng-model='games.newGame.number_of_players'>
             </div>  
         </div>
         </br>
         <div class="form-group">
             <label for="comment" class="col-lg-2 control-label">Comments</label>
-            <div class="col-sm-5">  
-                <textArea type="text" rows="3" id="textArea" class="form-control" name="comment" placeholder= "Comments" ng-model='games.newGame.comment'></textarea>
+                <div class="col-sm-9">  
+                    <textArea type="text" rows="3" id="textArea" class="form-control" name="comment" placeholder= "Comments" ng-model='games.newGame.comment'></textarea>
                 </div>
             </div>  
             </br>
             <div class="form-group">
-
                 <label for="google-place" class="col-lg-2 control-label">Location</label>
-                <div class="col-sm-5">  
-                    <input id="google-place" class="form-control" type="text" name="place" placeholder="Place" ng-model='games.newGame.place'>
+                    <div class="col-sm-9">  
+                        <input id="google-place" class="form-control" type="text" name="place" placeholder="Place" ng-model='games.newGame.place'>
                 </div>
             </div>
             </br>
             </br>
             <div class="form-group">
-             <div class="col-lg-2 control-label">
-              <div class="col-sm-5">
-                <input type="submit" value="Game on!" class="btn btn-primary">
+                <div class="col-lg-2 control-label">
+                    <div class="col-sm-9">
+                        <input type="submit" value="Game on!" class="btn btn-primary">
+                    </div>
+                </div>
             </div>
-          </div>
-          </br>
-          </br>
-       <div class="gmap" id="main-map" style="width:715px;height:600px;"></div>
-    </fieldset>
-</form>
+            </br>
+            </br>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="gmap" id="main-map" style="width:715px;height:600px;"></div>
 
 
 
