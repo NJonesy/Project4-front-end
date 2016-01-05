@@ -30,7 +30,7 @@ function GamesController(Game, uiGmapGoogleMapApi, $scope) {
          lat: 51.5081,
          lng: -0.1000
      },
-     zoom: 14
+     zoom: 10
    });
 
    var infoWindow = new maps.InfoWindow();
@@ -85,7 +85,7 @@ function GamesController(Game, uiGmapGoogleMapApi, $scope) {
          lat: 51.5081,
          lng: -0.1000
      },
-     zoom: 14
+     zoom: 10
    });
 
    var input = document.getElementById('google-place');
