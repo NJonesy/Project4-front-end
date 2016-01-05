@@ -47,7 +47,7 @@ button.players_join {
 /* ---- HOMEPAGE ---- */
 
 div.home { 
-  background: black; 
+  background: #201E1E; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
