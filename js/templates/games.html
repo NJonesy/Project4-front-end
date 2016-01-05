@@ -10,12 +10,12 @@
 
             <div class="form-group">
               <label>Sport</label>
-              <input class="form-control"  type="text" placeholder="sport" ng-model="games.sportSearch">
+              <input class="form-control" type="text" placeholder="sport" ng-model="games.sportSearch">
             </div>
 
             <div class="form-group">
               <label>How many players do you have?</label>
-              <input class="form-control"  type="text" placeholder="number of players" ng-model="games.numberSearch">
+              <input class="form-control" type="text" placeholder="number of players" ng-model="games.numberSearch">
             </div>
           </div>
         </div>
@@ -29,13 +29,12 @@
       </div>
 
       <div class="col-sm-6 col-md-6">
-
-        <table class="table table-striped table-hover ">
+        <table class="table table-striped table-hover">
           <tr class="table_header">
             <th>Sport</th>
             <th>Date</th>
-            <th>Start time</th>
             <th>Place name</th>
+            <th>Start time</th>
             <th>End time</th>
             <th>Comment</th>
             <th>Number of players wanted</th>
@@ -43,17 +42,12 @@
           <tr class="active" ng-repeat="x in nas = (games.all | filter:{sport:games.sportSearch} | filter:{number_of_players:games.numberSearch})"><td>{{ x.sport }}</td><td>{{ x.date }}</td><td>{{ x.placeName }}</td><td>{{ x.start_time }}</td><td>{{ x.end_time }}</td><td>{{ x.comment }}</td><td>{{ x.number_of_players }}</td>
           </tr>
         </table>
+      </div>
     </div>
-  </div>
   </div>
 </div>
 
-<!-- <tr class="active">
-  <td>7</td>
-  <td>Column content</td>
-  <td>Column content</td>
-  <td>Column content</td>
-</tr> -->
+
 
 
 
