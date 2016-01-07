@@ -116,6 +116,7 @@ thead {
   border: solid;
   border-width: 2px;
   border-radius: 10px;
+  background-color: #375a7f;
 }
 
 tr.active {
