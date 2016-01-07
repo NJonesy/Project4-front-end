@@ -107,15 +107,21 @@ div#current-games div.panel-body {
   padding: 10px;
 }
 
-tr.active {
-  border: solid;
-  border-width: 2px;
+.table_div {
+  overflow-y: scroll;
+  height: 500px;
 }
 
-tr.table_header {
+thead {
   border: solid;
   border-width: 2px;
   border-radius: 10px;
+}
+
+tr.active {
+  border: solid;
+  border-width: 2px;
+
 }
 
 .search_map {
