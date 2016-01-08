@@ -124,6 +124,14 @@ tr:after {
     overflow-y: auto;
 }*/
 
+tbody {
+    height: 500px;       /* Just for the demo          */
+    overflow-y: auto;    /* Trigger vertical scroll    */
+    overflow-x: hidden;  /* Hide the horizontal scroll */
+}
+
+
+
 .table_div {
   overflow-y: scroll;
   height: 500px;
