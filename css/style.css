@@ -103,9 +103,26 @@ div.gmap {
 
 /* ---- GAMES ---- */
 
+table {
+        width: 100%;
+    }
+
 div#current-games div.panel-body {
-  padding: 10px;
+      padding: 10px;
+    }
+
+
+tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
 }
+
+/*tbody {
+    height: 120px;
+    overflow-y: auto;
+}*/
 
 .table_div {
   overflow-y: scroll;
