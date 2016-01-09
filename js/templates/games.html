@@ -7,15 +7,31 @@
 
           <div class="col-sm-12 col-md-12">
             <h2>Join a game in your sport</h2>
-
-            <div class="form-group">
-              <label>Sport</label>
-              <input class="form-control" type="text" placeholder="sport" ng-model="games.sportSearch">
-            </div>
+            
+              <div class="form-group">
+                <label for="sport">Sport</label>
+                  <select name="sport" class="form-control" ng-model="games.sportSearch">
+                    <option value="">All games</option>
+                    <option value="Basketball">Basketball</option>
+                    <option value="Football">Football</option>
+                    <option value="Tennis">Tennis</option>
+                    <option value="Squash">Squash</option>
+                    <option value="Hockey">Hockey</option>
+                    <option value="Badminton">Badminton</option>
+                    <option value="Lacrosse">Lacrosse</option>
+                    <option value="Netball">Netball</option>
+                    <option value="Golf">Golf</option>
+                    <option value="Rugby">Rugby</option>
+                    <option value="Cricket">Cricket</option>
+                    <option value="American Football">American Football</option>
+                    <option value="Table tennis">Table tennis</option>
+                    <option value="Cycling">Cycling</option>
+                  </select>
+              </div>
 
             <div class="form-group">
               <label>How many players do you have?</label>
-              <input class="form-control" type="text" placeholder="number of players" ng-model="games.numberSearch">
+              <input class="form-control" type="text" placeholder="Number of players" ng-model="games.numberSearch">
             </div>
           </div>
         </div>
