@@ -42,7 +42,7 @@
             </tr>
           </thead>
           <tbody class="scroller">
-            <tr class="active" ng-repeat="x in nas = (games.all | filter:{sport:games.sportSearch} | filter:{number_of_players:games.numberSearch})"><td>{{ x.sport }}</td><td>{{ x.date }}</td><td>{{ x.placeName }}</td><td>{{ x.start_time }}</td><td>{{ x.end_time }}</td><!-- <td>{{ x.comment }}</td> --><td>{{ x.number_of_players }}</td>
+            <tr class="active" ng-repeat="x in nas = (games.all | filter:{sport:games.sportSearch} | filter:{number_of_players:games.numberSearch})"><td>{{ x.sport }}</td><td>{{ x.date }}</td><td>{{ x.placeName }}</td><td>{{ x.start_time }}</td><td>{{ x.end_time }}</td><!-- <td>{{ x.comment }}</td> --><td>{{ x.number_of_players }}</td><td>{{ x.creator.username }}</td>
             </tr>
           </tbody>
         </table>
