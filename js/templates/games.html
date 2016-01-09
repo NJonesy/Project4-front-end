@@ -46,30 +46,32 @@
     </div>
 
     <div class="row">
-      <div class="col-sm-6 col-md-6">
+      <div class="col-xsm-6 col-md-6">
         <div class="search_map" id="search_map" style="width:100%;height:500px;"></div>
         <div id="class" ng-repeat="marker in games.markers"></div>
       </div>
 
-      <div class="table_div col-sm-6 col-md-6">
-        <table class="table table-fixed table-striped table-hover">
-          <thead>
-            <tr>
-              <th>Sport</th>
-              <th>Date</th>
-              <th>Place name</th>
-              <th>Start time</th>
-              <th>End time</th>
+      <div class="outer col-xsm-6 col-md-6">
+        <div class="innera">
+          <table class="table table-fixed table-striped table-hover">
+            <thead>
+              <tr>
+                <th>Sport</th>
+                <th>Date</th>
+                <th>Place name</th>
+                <th>Start time</th>
+                <th>End time</th>
       <!--         <th>Comment</th> -->
-              <th>Number of players wanted</th>
-              <th>Game creator</th>
-            </tr>
-          </thead>
-          <tbody class="scroller">
-            <tr class="active" ng-repeat="x in nas = (games.all | filter:{sport:games.sportSearch} | filter:{number_of_players:games.numberSearch})"><td>{{ x.sport }}</td><td>{{ x.date }}</td><td>{{ x.placeName }}</td><td>{{ x.start_time }}</td><td>{{ x.end_time }}</td><!-- <td>{{ x.comment }}</td> --><td>{{ x.number_of_players }}</td><td>{{ x.creator.username }}</td>
-            </tr>
+                <th>Number of players wanted</th>
+                <th>Game creator</th>
+              </tr>
+            </thead>
+            <tbody class="scroller">
+              <tr class="active" ng-repeat="x in nas = (games.all | filter:{sport:games.sportSearch} | filter:{number_of_players:games.numberSearch})"><td>{{ x.sport }}</td><td>{{ x.date }}</td><td>{{ x.placeName }}</td><td>{{ x.start_time }}</td><td>{{ x.end_time }}</td><!-- <td>{{ x.comment }}</td> --><td>{{ x.number_of_players }}</td><td>{{ x.creator.username }}</td>
+              </tr>
           </tbody>
-        </table>
+          </table>
+        </div>
       </div>
     </div>
   </div>

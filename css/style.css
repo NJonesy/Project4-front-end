@@ -111,44 +111,29 @@ div#current-games div.panel-body {
       padding: 10px;
     }
 
-
-tr:after {
-    content: ' ';
-    display: block;
-    visibility: hidden;
-    clear: both;
+.outer { 
+  position:relative;
+  width: 560px;
 }
 
-/*tbody {
-{
-    height: 120px;
-    overflow-y: auto;
-}*/
-
-tbody {
-    height: 500px;       /* Just for the demo          */
-    overflow-y: auto;    /* Trigger vertical scroll    */
-    overflow-x: hidden;  /* Hide the horizontal scroll */
-}
-
-
-
-.table_div {
+.innera {
   overflow-y: scroll;
+  overflow-x: hidden;
   height: 500px;
+  width: 560px;
 }
 
-thead {
+.outer thead {
+  position: absolute;
+  width: 560px;
   border: solid;
   border-width: 2px;
-  border-radius: 10px;
   background-color: #375a7f;
 }
 
-tr.active {
+.outer tr.active {
   border: solid;
   border-width: 2px;
-
 }
 
 .search_map {
