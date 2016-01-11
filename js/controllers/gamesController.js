@@ -14,6 +14,12 @@ function GamesController(Game, uiGmapGoogleMapApi, $scope) {
  this.numberSearch = "";
  this.markers = [];
 
+ //  this.selectGame = function(newGame) {
+
+ //   self.selectedGame = Game.get({ id: $scope.id });
+ //   console.log(self.selectedGame);
+ // }
+
  self.addGame = function() {
    Game.save(self.newGame, function(newGame) {
      self.all.push(newGame);
