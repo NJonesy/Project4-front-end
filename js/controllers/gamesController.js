@@ -22,6 +22,7 @@ function GamesController(Game, uiGmapGoogleMapApi, $scope) {
 
  self.addGame = function() {
    Game.save(self.newGame, function(newGame) {
+    console.log(self.newGame);
      self.all.push(newGame);
      self.newGame = {};
    })
