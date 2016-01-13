@@ -67,13 +67,12 @@
                 <th>Place name</th>
                 <th>Start time</th>
                 <th>End time</th>
-      <!--         <th>Comment</th> -->
                 <th>Number of players wanted</th>
                 <th>Game creator</th>
               </tr>
             </thead>
             <tbody class="scroller">
-              <tr class="active" ng-repeat="x in nas = (games.all | filter:{sport:games.sportSearch} | filter:{number_of_players:games.numberSearch})" ng-click="games.selectGame(newGame)"><td>{{ x.sport }}</td><td>{{ x.date|date:'fullDate' }}</td><td>{{ x.placeName }}</td><td>{{ x.start_time }}</td><td>{{ x.end_time }}</td><!-- <td>{{ x.comment }}</td> --><td>{{ x.number_of_players }}</td><td>{{ x.creator.username }}</td>
+              <tr class="active" ng-repeat="x in nas = (games.all | filter:{sport:games.sportSearch} | filter:{number_of_players:games.numberSearch})" ng-click="games.selectGame(newGame)"><td>{{ x.sport }}</td><td>{{ x.date|date:'shortDate' }}</td><td>{{ x.placeName }}</td><td>{{ x.start_time }}</td><td>{{ x.end_time }}</td><td>{{ x.number_of_players }}</td><td>{{ x.creator.username }}</td>
               </tr>
           </tbody>
           </table>
