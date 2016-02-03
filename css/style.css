@@ -60,7 +60,7 @@ div.home {
 }
 
 div.home h1 {
-  margin: 10px;
+  margin-top: 150px;
   padding: 0;
   margin-bottom: 150px;
   font-size: 85px;
@@ -73,7 +73,8 @@ button.login {
   font-size: 40px;
   border-radius: 20px;
   background: none;
-  margin-right: 50px;
+  right: 0;
+  margin: 0 0 15px;
 }
 
 button.register {
@@ -83,7 +84,8 @@ button.register {
   font-size: 40px;
   border-radius: 20px;
   background: none;
-  margin-left: 50px;
+  right: 0;
+  margin: 0 0 15px;
 }
 
 
