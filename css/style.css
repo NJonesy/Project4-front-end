@@ -67,8 +67,13 @@ div.centered {
   margin-right: 8px;
 }
 
-/* ---- USER TYPE ---- */
+/* ---- Register ---- */
 
+h3 {
+  margin-top: 150px;
+}
+
+/* ---- USER TYPE ---- */
 
 button.game_join {
   margin-left: 80px;
