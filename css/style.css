@@ -3,7 +3,11 @@
 body {
   margin: 0 auto;
   font-family: 'Archivo Black', sans-serif;
-  background: #201E1E; 
+/*  background: #201E1E;*/
+  background: url("http://www.caterhamschool.co.uk/assets/img/latest-news/All-Weather-hockey-pitch-gets-new-floodlights/floodlights-12-11-26-129.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 40px;
 }
 
 div.centered {
@@ -39,11 +43,9 @@ div.centered {
     }
 }
 
-/*.navbar {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-}*/
+.navbar {
+    background: none;
+}
 
 .navbar a:focus {
     outline: 0;
@@ -107,7 +109,7 @@ button.players_join {
 /* ---- HOMEPAGE ---- */
 
 div.home { 
-  background: #201E1E; 
+/*  background: #201E1E; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -120,7 +122,7 @@ div.home {
 }
 
 div.home h1 {
-  margin-top: 280px;
+  margin-top: 170px;
   padding: 0;
   margin-bottom: 150px;
   font-size: 85px;
@@ -137,6 +139,10 @@ button.login {
   margin: 0 0 15px;
 }
 
+/*button.login:hover {
+  background: green;
+}*/
+
 button.register {
   border: solid;
   width: 250px;
@@ -147,6 +153,10 @@ button.register {
   right: 0;
   margin: 0 0 15px;
 }
+
+/*button.register:hover {
+  background: green;
+}*/
 
 /* ---- CREATE GAME ---- */
 
