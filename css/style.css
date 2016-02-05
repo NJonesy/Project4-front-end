@@ -183,6 +183,52 @@ table {
         width: 100%;
     }
 
+thead, tbody, tr, td, th { display: block; }
+
+tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 30px;
+}
+
+/*td.filterable-cell > div {
+  width: 100%; 
+  height: 100%; 
+}
+*/
+thead {
+  background-color: #375a7f;
+}
+
+thead th {
+    height: 30px;
+
+    /*text-align: left;*/
+}
+
+tbody {
+    height: 440px;
+    overflow-y: auto;
+    background-color: #375a7f;
+    opacity: .8;
+}
+
+thead {
+    /* fallback */
+}
+
+
+tbody td, thead th {
+    width: 19.2%;
+    float: left;
+}
+
+/*table {
+        width: 100%;
+    }
+
 div#current-games div.panel-body {
       padding: 10px;
     }
@@ -210,7 +256,7 @@ div#current-games div.panel-body {
 .outer tr.active {
   border: solid;
   border-width: 2px;
-}
+}*/
 
 .search_map {
   border: solid;
