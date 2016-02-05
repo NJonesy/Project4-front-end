@@ -35,11 +35,12 @@ div.centered {
 
     .navbar-fixed-top.navbar-shrink {
         padding: 10px 0;
-        background-color: #051027;
+        background-color: black;
+        opacity: .7;
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 }
 
